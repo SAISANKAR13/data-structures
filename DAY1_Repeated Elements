@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int originalArray[] = {1, 2, 3, 4, 5};
+    int newArray[10];
+    int index = 0;
+
+    for (int i = 0; i < 5; i++) {
+        newArray[index++] = originalArray[i];
+        newArray[index++] = originalArray[i];
+    }
+
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", newArray[i]);
+    }
+
+    return 0;
+}
